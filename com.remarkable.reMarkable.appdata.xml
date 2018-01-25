@@ -10,4 +10,7 @@
   <description>
     <p>Preview, transfer and live stream documents for the reMarkable paper tablet</p>
   </description>
+  <releases>
+    <release date="2017-11-16" version="0.0.5-16-1408"/>
+  </releases>
 </component>
