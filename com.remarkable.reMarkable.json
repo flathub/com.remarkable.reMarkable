@@ -73,7 +73,7 @@
                         {
                             "type": "archive",
                             "url": "https://github.com/qt/qtwebsockets/archive/v5.9.3.tar.gz",
-                            "sha256": "1f631f1bb42093452f5555564290120c421c19f8f92e8d06ff91f55e626128c5"
+                            "sha256": "ebe5613f80f7d784c5b6946227e545dfbce0d980707096300469789a60b474cb"
                         }
                     ],
                     "build-commands": [
