@@ -10,6 +10,8 @@
   <description>
     <p>Preview, transfer and live stream documents for the reMarkable paper tablet</p>
   </description>
+  <icon type="remote" height="64" width="64">https://avatars3.githubusercontent.com/u/19650282?s=64</icon>
+  <icon type="remote" height="128" width="128">https://avatars3.githubusercontent.com/u/19650282?s=128</icon>
   <categories>
     <category>Utility</category>
   </categories>
