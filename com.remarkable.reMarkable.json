@@ -65,29 +65,6 @@
                     "sha256": "1a1519adc6d62359f6f73bc2a4a6e76fb710fed78ca1bc09e46191e825d3058c",
                     "size": 20777403 
                 }
-            ],
-            "modules": [
-                {
-                    "name": "qtwebsockets",
-                    "buildsystem": "simple",
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://github.com/qt/qtwebsockets/archive/v5.9.3.tar.gz",
-                            "sha256": "ebe5613f80f7d784c5b6946227e545dfbce0d980707096300469789a60b474cb"
-                        }
-                    ],
-                    "build-commands": [
-                            "qmake PREFIX=/app INCLUDEPATH=$(pwd)/src/websockets/",
-                            "sed -i 's#QtWebSockets/##g' src/websockets/{qwebsocket,qwebsocketprotocol,qwebsocketprotocol_p,qwebsocketserver,qwebsocketcorsauthenticator,qmaskgenerator,qdefaultmaskgenerator_p}.h",
-                            "sed -i 's#QtWebSockets/##g' src/imports/qmlwebsockets/{qqmlwebsocket,qqmlwebsocketserver}.h",
-                            "sed -i 's/#include <QWebSocket>/#include \"qwebsocket.h\"/g' src/imports/qmlwebsockets/qqmlwebsocket.h",
-                            "sed -i 's#<QtWebSockets/QWebSocket>#\"qwebsocket.h\"#g' src/imports/qmlwebsockets/qqmlwebsocket.cpp",
-                            "sed -i 's/#include <QWebSocketServer>/#include \"qwebsocketserver.h\"/g' src/imports/qmlwebsockets/qqmlwebsocketserver.h",
-                            "make",
-                            "make install INSTALL_ROOT=/app"
-                    ]
-                }
             ]
         }
     ]
